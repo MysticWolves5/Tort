@@ -56,7 +56,7 @@ public class TortoiseEntity extends Animal {
 
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = 35;
+            this.idleAnimationTimeout = 80;
             this.idleAnimationState.start(this.tickCount);
         } else {
             --this.idleAnimationTimeout;
@@ -72,4 +72,5 @@ public class TortoiseEntity extends Animal {
         }
     }
 }
+
 
